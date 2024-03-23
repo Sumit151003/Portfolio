@@ -1,0 +1,576 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #080808;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+/* -------------------NavBar-------------------- */
+
+header{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    background-color: #2a27279b;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 4.5rem;
+}
+nav h1{
+    font-size: 2rem;
+    color: #ff004f;
+    margin-left: 1rem;
+    width: 50%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 2rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background-color: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul .close-menu i{
+    display: none;
+    cursor: pointer;
+}
+nav .menu i{
+    display: none;
+    cursor: pointer;
+}
+
+/* -----------Hero Section-------------*/
+
+.hero-section{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+}
+.intro-text, .intro-image{
+    width: 50%;
+    text-align: center;
+}
+.intro-text {
+    padding: 0 2rem;
+}
+.intro-text h1{
+    font-size: 2.6rem;
+    margin: 8rem 3rem 1rem 3rem;
+}
+.intro-text h1 span{
+    color: rgb(60, 60, 160);
+}
+.intro-image{
+    padding-top: 5rem;
+}
+.intro-image img{
+    height: 80%;
+}
+.resume a{
+    text-decoration: none;
+}
+
+/* -------For all Hr */
+hr{
+    border: 1.2px solid rgba(128, 128, 128, 0.612);
+    width: 97%;
+    margin: auto;
+    box-shadow: 0.1rem 0 0.3rem grey;
+}
+
+/* --------------About Section------------- */
+
+.about-section{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+}
+.about-section .picture, .about-section .bio{
+    height: 50%;
+    width: 100%;
+}
+.picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.picture img{
+    height: 100%;
+}
+.about-section .bio{
+    line-height: 2rem;
+    padding-top: 5rem;
+}
+.section-heading{
+    font-size: 2.7rem;
+    color: #ff004f;
+}
+.bio p{
+    margin: 8rem 3rem 0 0;
+}
+
+/* ------------------skills Section ---------------*/
+
+.skills-section{
+    height: 100vh;
+    width: 100%;
+    margin: 1rem 0 8.5rem 0;
+}
+
+.first-row, .second-row{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.skills-section .section-heading{
+    text-align: center;
+    margin-top: 2rem;
+}
+.sub-heading{
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    color : rgb(60, 60, 160);
+}
+.technologies{
+    margin-top: 1rem;
+    height: 80%;
+    width: 16%;
+    transition: scale 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.technologies:hover{
+    border: 1px solid white;
+    border-radius: 1.2rem;
+    box-shadow: 2px 2px 1rem grey;
+    scale: 1.05;
+}
+.technologies img{
+    width: 100%;
+    border-radius: 1.2rem;
+}
+
+/* -----------------Projects Section-------------*/
+
+.projects-section{
+    height: 255vh;
+    width: 100%;
+    margin: 1rem 0;
+}
+.projects-section .section-heading{
+    text-align: center;
+    margin-top: 2.2rem ;
+}
+.project-row{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+}
+.project-video, .project-details{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+.project-image{
+    width: 100%;
+    height: 35%;
+}
+.project-video video{
+    width: 80%;
+    border-radius: 1.5rem;
+    margin: 5rem 0 0 2.5rem;
+}
+.project-image i{
+    margin: 3rem 0 1rem 0;
+    font-size: 6rem;
+}
+.project-text p{
+    margin: 2.1rem 3.5rem 0 2rem;
+}
+.project-image h2 {
+    color: rgb(60, 60, 160);
+}
+.projects-link {
+    margin: -4rem 0 0 6rem;
+    color: #ff004f;
+}
+.projects-link a i{
+    font-size: 1.4rem;
+    margin-left: 0.6rem;
+    color: white;
+    opacity: 0.5;
+}
+.projects-link a i:hover{
+    opacity: 1;
+}
+
+/* ------------------Education Section--------------- */
+
+.education-section{
+    height: 80vh;
+    width: 100%;
+    margin: 2rem 0 3rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.college, .high-school, .school{
+    width: 28%;
+}
+.icon{
+    height: 60%;
+    font-size: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.info{
+    text-align: center;
+    padding: 0.4rem 2rem;
+    line-height: 1.8rem;
+}
+
+/* ---------------Contact Section-------------- */
+
+.contact-section{
+    height: 85vh;
+    width: 100%;
+    display: flex;
+}
+.socials, .message{
+    width: 50%;
+    height: 100%;
+}
+.socials{
+    padding: 3rem 0 0 8rem;
+}
+.socials h3 {
+    margin: 2rem 0 3rem 0;
+    font-size: 1.9rem;
+}
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+.socials-primary{
+    font-size: 1.3rem;
+}
+.socials-primary p{
+    margin-bottom: 1rem;
+}
+.socials-primary i{
+    color: rgb(60, 60, 160);
+    font-size: 1.6rem;
+    margin-right: 1.2rem;
+}
+.social-icons{
+    margin-top: 4rem;
+}
+.social-icons i{
+    font-size: 1.7rem;
+    margin-right: 2rem;
+    opacity: 0.5;
+    transition: scale 0.5s;
+}
+.social-icons i:hover{
+    opacity: 1;
+    scale: 1.2;
+    color: rgb(60, 60, 160);
+}
+.message{
+    padding: 2rem;
+}
+.message form{
+    width: 90%;
+    height: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    margin-top: 2rem;
+    background-color: rgba(128, 128, 128, 0.155);
+    border-radius: 0.6rem;
+    border: none;
+    color: #717171;
+    font-size: 0.9rem;
+    padding: 1rem;
+    outline: none;
+}
+form input{
+    height: 2.7rem;
+}
+form textarea{
+    resize: none;
+}
+.btn{
+    padding: 0.7rem;
+    width: 7rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: 1px solid #ff004f;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+}
+.btn:hover{
+    background-color: #ff004f;
+}
+
+/* --------------CSS for small screens---------------- */
+
+
+@media only screen and (max-width: 600px){
+    body{
+        font-size: 0.5;
+    }
+
+    /* For all main heading */
+    .section-heading{
+        font-size: 2rem;
+    }
+
+    /* Nav Bar */
+    nav{
+        padding: 0%;
+    }
+    nav h1{
+        font-size: 1.3rem;
+        width: 70%;
+    }
+    nav ul{
+        flex-direction: column;
+        position: fixed;
+        right: -200px;
+        top: 0;
+        background-color: #020202ca;
+        height: 100vh;
+        width: 200px;
+        z-index: 1;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        margin-top: 4rem;
+    }
+    nav ul .close-menu i{
+        display: block;
+        font-size: 1.5rem;
+        text-align: end;
+        margin: 1.8rem 1rem 0 0;
+    }
+    nav .menu{
+        position: absolute;
+        right: 1rem;
+        top: 2rem;
+    }
+    nav .menu i{
+        display: block;
+        font-size: 1.5rem;
+        text-align: end;
+    }
+
+    /* Intro Section */
+    .hero-section{
+        flex-direction: column-reverse;
+        padding: 0%;
+        margin: 0%;
+    }
+    .intro-text, .intro-image{
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+    }
+    .intro-image img{
+        margin: 1.5rem 0 0 0;
+    }
+    .intro-text h1{
+        font-size: 1.5rem;
+        margin: 2rem 0 3rem 0;
+    }
+    
+    /* About Section */
+    .about-section{
+        flex-direction: column;
+    }
+    .about-section .picture, .about-section .bio{
+        width: 100%;
+        height: 50%;
+        padding: 0%;
+        margin: 0%;
+        text-align: center;
+    }
+    .picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .picture img{
+        height: 15rem;
+    }
+    .bio h1{
+        margin: 2rem 0 0.7rem 0;
+    }
+    .bio p{
+        margin: 0%;
+    }
+
+    /* Skills Section */
+    .skills-section{
+        height: 100%;
+        margin: 0%;
+    }
+    .first-row, .second-row{
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        height: 50%;
+        margin: 2rem 0;
+    }
+    .skills-section .sub-heading{
+        margin: 0%;
+        text-align: center;
+    }
+    .skills-section .section-heading{
+        margin: 2rem 0 1rem 0;
+    }
+    .technologies img{
+        margin: 0%;
+    }
+    .technologies{
+        width: 30%;
+        height: 15%;
+        margin: 0%;
+    }
+    .technologies:hover{
+        scale: 1.1;
+        border: none;
+        box-shadow: none; 
+    }
+
+    /* Project Section */
+    .projects-section{
+        height: 100%;
+    }
+    .project-row{
+        flex-direction: column;
+        margin: 0 0 8rem 0;
+    }
+    .middle-project-row{
+        flex-direction: column-reverse;
+    }
+    .project-video{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-video video{
+        margin: 0%;
+    }
+    .project-details{
+        width: 100%;
+    }
+    .project-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-image i{
+        margin: 0 1rem 0 0;
+        font-size: 3rem;
+    }
+    .project-text p{
+        margin: 0%;
+        padding: 0 1rem;
+    }
+    .projects-link{
+        margin-top: 0.3rem;
+    }
+
+    /* Education Section */
+    .heading{
+        margin: 1.3rem 0 0 0;
+    }
+    .education-section{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+        height: 100vh;
+        padding-bottom: 0.8rem;
+    }
+    .college, .high-school, .school{
+        width: 98%;
+        height: 40%;
+        background-color: rgba(128, 128, 128, 0.293);
+        border-radius: 1rem;
+        margin-top: 1rem;
+    }
+    .info{
+        padding: 0%;
+        margin-top: 0.7rem;
+    }
+    .icon{
+        font-size: 2rem;
+        height: 2rem;
+        margin-top: 0.5rem;
+    }
+
+    /* Contact Section */
+    .contact-section{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .socials, .message{
+        width: 100%;
+        height: 50%;
+        margin: 0%;
+        padding: 0 0 0 1.5rem;
+    }
+    .social-icons{
+        margin: 2rem 0 0 0;
+    }
+    .socials h3{
+        font-size: 1.5rem;
+    }
+    form button{
+        margin-bottom: 1rem;
+    }
+}

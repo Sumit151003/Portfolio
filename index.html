@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/Images/favicon.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Sumit's Portfolio</h1>
+            <ul>
+                <div class="close-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact Info</a></li>
+            </ul>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <div class="intro-text">
+                <h1>
+                    Hey, i am <span>Sumit</span> <br />
+                    and i am a
+                    passionate <br />
+                    <span id="element"></span>
+                </h1>
+                <div class="resume">
+                    <a href="Sumit's_Resume.pdf" class="btn" download>Download CV</a>
+                </div>
+            </div>
+            <div class="intro-image">
+                <img src="/Images/programmer.svg" />
+            </div>
+        </div>
+        <hr>
+    </header>
+    <main>
+        <section id="about">
+            <div class="about-section">
+                <div class="picture">
+                    <img src="/Images/person.png">
+                </div>
+                <div class="bio">
+                    <h1 class="section-heading">About Me</h1>
+                    <p>Hello! I'm <b>Sumit Patidar</b>, a dedicated and forward-thinking Full Stack Web Developer with a
+                        passion for crafting innovative online experiences. Currently in my final year of College and
+                        honing my skills in Full Stack Web Development using the dynamic <b>MERN</b> technology stack.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="skills">
+            <div class="skills-section">
+                <h1 class="section-heading">Skills</h1>
+
+                <p class="sub-heading">Front-End technologies</p>
+                <div class="first-row">
+                    <div class="technologies">
+                        <img src="/Images/html3d.png">
+                        <p>HTML</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/css3d.png">
+                        <p>CSS</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/js3d.png">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/react3d.png">
+                        <p>React JS</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/bootstrap3d.png">
+                        <p>Bootsrap</p>
+                    </div>
+                </div>
+                <p class="sub-heading">Back-End technologies</p>
+                <div class="second-row">
+                    <div class="technologies">
+                        <img src="/Images/mongo3d.png">
+                        <p>Mongo DB</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="Images/express3d.png">
+                        <p>Express JS</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/node3d.png">
+                        <p>Node</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/npm3d.png">
+                        <p>Npm</p>
+                    </div>
+                    <div class="technologies">
+                        <img src="/Images/mysql.png">
+                        <p>MySQl</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="projects">
+            <div class="projects-section">
+                <h1 class="section-heading">Projects</h1>
+                <div class="project-row">
+                    <div class="project-video">
+                        <video src="/Videos/WanderLusttv.mp4" autoplay loop muted></video>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-image">
+                            <i class="fa-regular fa-compass"></i>
+                            <h2>WanderLust</h2>
+                        </div>
+                        <div class="project-text">
+                            <p>"Wanderlust" is an innovative full-stack project designed to revolutionize the rental
+                                housing market, offering users a seamless platform akin to Airbnb. With a
+                                user-friendly interface, WanderLust allows individuals to effortlessly create and
+                                upload listings for rental properties, empowering both hosts and renters alike. <a
+                                    href="#">Visit website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-row middle-project-row">
+                    <div class="project-details">
+                        <div class="project-image">
+                            <i class="fa-brands fa-amazon"></i>
+                            <h2>Mini-Amazon</h2>
+                        </div>
+                        <div class="project-text">
+                            <p>The Mini-Amazon project is a basic HTML and CSS clone of the Amazon website, focusing on
+                                replicating its layout and core features such as navigation, search, and product
+                                display. Through responsive design techniques like flexbox and grid layout, it ensures
+                                compatibility across devices. While lacking dynamic functionalities, it serves as an
+                                excellent learning tool for beginners to grasp front-end development concepts and
+                                practice building user interfaces. <a href="#">Visit website</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-video">
+                        <video src="/Videos/Amazontv.mp4" autoplay loop muted></video>
+                    </div>
+                </div>
+                <div class="project-row">
+                    <div class="project-video">
+                        <video src="/Videos/Photographytv.mp4" autoplay loop muted></video>
+                    </div>
+                    <div class="project-details">
+                        <div class="project-image">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <h2>AI Visions</h2>
+                        </div>
+                        <div class="project-text">
+                            <p>AI Visions presents a unique photography website driven by artificial
+                                intelligence-generated images. Showcasing a mesmerizing collection crafted by AI
+                                algorithms. Built using HTML and CSS, AI Visions features an
+                                intuitive interface designed to immerse visitors in the captivating world of
+                                AI-generated art. With seamless navigation and a minimalist layout, users can explore
+                                the curated gallery effortlessly. <a href="#">Visit website</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="projects-link">For More Projects visit <a href="https://github.com/Sumit151003"
+                        target="_blank"><i class="fa-brands fa-github"></i></a></p>
+        </section>
+
+        <hr>
+
+        <section id="education">
+            <div class="heading">
+                <h1 class="section-heading">Education</h1>
+            </div>
+            <div class="education-section">
+                <div class="college">
+                    <div class="icon">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="info">
+                        <p><b>Bachelor's</b></p>
+                        <p>Shree Atal Bihari Vajpayee Government Arts And Commerce College (DAVV)</p>
+                        <p>B.COM(Computer Application)</p>
+                        <p>CGPA: 8.0</p>
+                        <p>2021-2024</p>
+                    </div>
+                </div>
+                <div class="high-school">
+                    <div class="icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+                    <div class="info">
+                        <p><b>12</b><sup>th</sup></p>
+                        <p>Master Mind Senior Secondary School (CBSE)</p>
+                        <p>CGPA: 8.0</p>
+                        <p>2020-21</p>
+                    </div>
+                </div>
+                <div class="school">
+                    <div class="icon">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div class="info">
+                        <p><b>10</b><sup>th</sup></p>
+                        <p>Future International Public School (CBSE)</p>
+                        <p>CGPA: 8.0</p>
+                        <p>2018-19</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <div class="heading">
+                <h1 class="section-heading">Contact Me</h1>
+            </div>
+            <div class="contact-section">
+                <div class="socials">
+                    <h3>Contact Via</h3>
+                    <div class="socials-primary">
+                        <p><a href="https://mail.google.com/mail" target="_blank"><i
+                                    class="fa-regular fa-paper-plane"></i> patidarsumit@gmail.com</a></p>
+                        <p><i class="fa-solid fa-phone"></i> +91 6261705011</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="message">
+                    <form name='submit-to-google-sheet'>
+                        <input type="text" name="name" placeholder="Your Name" required /><br />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" cols="50" placeholder="Yor Message" rows="7" required></textarea>
+                        <button class="btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer></footer>
+
+    <script src="script.js"></script>
+    <script>
+        let typed = new Typed("#element", {
+            strings: ["Web Developer", "Full-Stack Developer"],
+            typeSpeed: 70,
+        });
+    </script>
+</body>
+
+</html>
